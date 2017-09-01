@@ -220,6 +220,6 @@ curl --request POST \
  }'
 ```
 
-The domain along with the `client_id` and `client_secret` values should match your Auth0 client. Check the values in the [dashboard](${manage_url}/#/clients). Use the `username` and `password` of the user you want to authenticate with. Request the API `audience` by using the API ddentifier defined at the beginning of the article and customize the `scope` to your needs. In the snippet above, the `delete:photos` scope is not requested, so calling `DELETE /photos` with the received `access_token` will fail.
+The domain along with the `client_id` and `client_secret` values should match your Auth0 client. Check the values in the [dashboard](${manage_url}/#/clients). Use the `username` and `password` of the user you want to authenticate with. Request the API `audience` by using the API identifier defined at the beginning of the article and customize the `scope` to your needs. In the snippet above, the `delete:photos` scope is not requested, so calling `DELETE /photos` with the received `access_token` will fail.
 
 Now you can use the `access_token` and pass it along in the `Authorization` header as a `Bearer` token.
